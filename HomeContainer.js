@@ -6,6 +6,9 @@ const Home =  ({ posts }) => (
   <div>
     <h1>Home</h1>
     <ul>
+      <li>
+        <a href="/admin.html">Admin</a>
+      </li>
       { posts && posts.node && posts.node.list &&
         posts.node.list.map((post) => (
           <li key={post.id}>
